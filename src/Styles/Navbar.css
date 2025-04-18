@@ -1,0 +1,78 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+/* Hamburger Icon */
+.hamburger-menu {
+  width: 35px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+.hamburger-menu .bar {
+  height: 4px;
+  background-color: #617412;
+  margin: 6px 0;
+  transition: background 0.3s ease;
+}
+
+.hamburger-menu:hover .bar {
+  background-color: #be2ae2;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px; /* Initially hidden */
+  width: 200px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.4s ease-in-out;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0; /* Slide into view */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #6aabf0;
+}
+
+/* Close sidebar if mouse leaves */
+.hamburger-menu:hover .sidebar {
+  left: 0;
+}
+
+/* Icon styles */
+.icon {
+  font-size: 1.4rem;
+}

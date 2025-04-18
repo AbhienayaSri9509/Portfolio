@@ -1,0 +1,36 @@
+/* Apply smooth transitions */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: cyan;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: lightgreen;
+}

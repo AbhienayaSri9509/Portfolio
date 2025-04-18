@@ -1,0 +1,59 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark Mode Background */
+body {
+  background-color: #121212;
+  color: white;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Global Link Styles */
+a {
+  text-decoration: none;
+  color: cyan;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: lightgreen;
+}
+
+/* Container layout */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: cyan;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+/* Add some spacing to sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}

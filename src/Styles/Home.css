@@ -1,0 +1,113 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(to right, #51044d, #150227);
+  color: rgba(255, 255, 255, 0.901);
+  padding: 2rem;
+}
+
+.home-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: rgb(221, 14, 159);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+/* Button Container */
+.cta-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Common Button Styling - Smaller Buttons */
+.btn {
+  padding: 8px 20px;  /* ✅ Reduced padding */
+  font-size: 0.9rem;  /* ✅ Reduced font size */
+  font-weight: bold;
+  border-radius: 6px;  /* ✅ Slightly smaller border-radius */
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 140px;  /* ✅ Decreased button width */
+  text-align: center;
+  border: none;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* View Projects Button */
+.btn.primary {
+  background: rgb(161, 236, 236);
+  color: rgb(14, 160, 48);
+}
+
+/* Contact Me Button */
+.btn.secondary {
+  border: 2px solid rgb(229, 112, 206);
+  color: rgb(221, 103, 207);
+}
+
+/* Resume Button */
+.btn.resume {
+
+
+
+  background: #84c956; /* Orange */
+  color: black;
+  
+}
+
+/* Hover Effects with Animation */
+.btn:hover {
+  transform: translateY(-2px); /* ✅ Reduced hover lift effect */
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn.primary:hover {
+  background: white;
+}
+
+.btn.secondary:hover {
+  background: rgb(36, 183, 161);
+  color: black;
+}
+
+.btn.resume:hover {
+  background: #bb9152;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center; /* ✅ Ensures buttons are centered on small screens */
+  }
+
+  .btn {
+    width: 100%; /* ✅ Makes buttons take full width on small screens */
+    max-width: 220px; /* ✅ Slightly reduced max-width */
+  }
+}
