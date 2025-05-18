@@ -1,12 +1,13 @@
 import "../Styles/resume.css";
 import { motion } from "framer-motion";
 
-const skills = ["C","C++",  "Web Development","AI", "SQL", "CSS", "UI/UX ", "Problem Solving"];
+const skills = ["C","C++", "Web Development","AI", "SQL", "Deep Learning", "UI/UX ", "Problem Solving","Data Structures","Frontend development"];
 
 const projects = [
   { title: "To-Do App", description: "A simple task manager built using JavaScript with CRUD functionality." },
   { title: "Paginated Character Browser", description: "React app integrating API pagination to fetch and display characters." },
-  { title: "Employee Management System", description: "A SQL-based system to manage employee records with relational database design." }
+  { title: "Employee Management System", description: "A SQL-based system to manage employee records with relational database design." },
+  { title: "Virtual Dissection Of Anatomy", description: "Virtually Dissecting Animal Anatomy using Unity software VR Technology" }
 ];
 
 const certifications = [
@@ -18,7 +19,7 @@ const certifications = [
 ];
 
 const achievements = [
-  "IDEATHON 3.0 Winner - Sri Sai Ram Engineering College",
+  "IDEATHON 3.0 Winner and INNOVATHON 3.0 Runner - Sri Sai Ram Engineering College",
   "Won 'Best Paper Award' - 2024 in Sri Sai Ram Engineering College"
 ];
 
